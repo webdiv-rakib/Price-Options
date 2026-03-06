@@ -14,7 +14,7 @@ const NavBar = () => {
     ];
 
     return (
-        <nav className='md:flex items-center '>
+        <nav className='text-black bg-amber-400 p-5'>
             <div onClick={() => setOpen(!open)} className='md:hidden text-3xl'>
                 {
                     open === true ?
@@ -23,7 +23,7 @@ const NavBar = () => {
                 }
 
             </div>
-            <ul className='md:flex md:gap-5'>
+            <ul className='md:flex md:gap-5 absolute bg-amber-300 px-5'>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
